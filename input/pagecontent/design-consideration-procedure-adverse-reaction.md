@@ -26,6 +26,7 @@ classDiagram
   }
 
   class AllergicReaction{
+    <<AllergyIntolerance>>
     verificationStatus 
     criticality
     reaction.extension.allergyCertainty
