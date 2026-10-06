@@ -32,14 +32,14 @@ When the resource represents a DICOM series it SHALL contain the Series Instance
   * ^slicing.discriminator[1].type = #value
   * ^slicing.discriminator[=].path = "value"
 * extension[basedOn] contains ServiceRequestOrderEuImagingaccession 0..1
-* extension[basedOn][ServiceRequestOrderEuImagingaccession].value[x] only Reference(ImagingServiceRequestEuImaging)
+* extension[basedOn][ServiceRequestOrderEuImagingaccession].value[x] only Reference(ServiceRequestFillerOrderEuImaging)
   * identifier 1..1
   * identifier only AccessionNumberIdentifierEuImaging
 
 //R5* basedOn
 //R5  * insert SliceElement( #type, $this )
 //R5* basedOn contains ServiceRequestOrderEuImagingaccession 0..1
-//R5* insert BasedOnImagingServiceRequestEuImagingReference( ServiceRequestOrderEuImagingaccession )
+//R5* insert BasedOnServiceRequestFillerOrderEuImagingReference( ServiceRequestOrderEuImagingaccession )
 //R5* modality 1..1
 
 // type of image reference
